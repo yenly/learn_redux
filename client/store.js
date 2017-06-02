@@ -14,7 +14,7 @@ const defaultState = {
   comments
 };
 
-const store = createScore(rootReducer, defaultState);
+const store = createStore(rootReducer, defaultState);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 

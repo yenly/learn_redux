@@ -20,6 +20,7 @@ export addComment(postId, author, comment) {
 export removeComment(postId, i) {
   return {
     type: 'REMOVE_COMMENT',
-    i
+    i,
+    postId
   }
 }
